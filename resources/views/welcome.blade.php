@@ -49,7 +49,7 @@
             <div class="grid md:grid-cols-2 gap-12 items-center">
                 <div class="text-left">
                     <h1 class="text-5xl font-bold leading-tight mb-6 text-white">
-                        <span class="bg-gradient-to-r from-blue-400 to-indigo-500 text-transparent bg-clip-text">Transformasi</span> Keuangan Digital Anda
+                        <span class="bg-gradient-to-r from-blue-400 to-indigo-500 text-transparent bg-clip-text">Manage</span> Keuangan Digital Anda
                     </h1>
                     <p class="text-xl text-slate-300 mb-8">Platform manajemen keuangan yang menggabungkan teknologi modern dengan kemudahan penggunaan untuk kesuksesan finansial Anda.</p>
                     <div class="flex space-x-4">
@@ -69,7 +69,7 @@
                 </div>
                 <div class="relative">
                     <div class="absolute -inset-1 bg-gradient-to-r from-blue-600 to-indigo-600 rounded-lg blur opacity-20"></div>
-                    <img src="{{ asset('images/bg.jpg') }}" alt="MyWallet Preview" class="relative rounded-lg shadow-2xl border border-slate-700 w-full h-auto object-cover">
+                    <img src="{{ asset('images/bg2.jpg') }}" alt="MyWallet Preview" class="relative rounded-lg shadow-2xl border border-slate-700 w-full h-auto object-cover">
                 </div>
             </div>
         </div>
@@ -318,59 +318,225 @@
         </div>
     </section>
 
-    <!-- About Section -->
-    <section id="about" class="py-20 bg-white">
-        <div class="max-w-7xl mx-auto text-center px-6">
-            <h2 class="text-4xl font-semibold text-gray-800 mb-6">Tentang Kami</h2>
-            <p class="text-lg text-gray-600 mb-8">FinCrest adalah platform yang membantu individu dan bisnis merencanakan, mengelola, dan mengoptimalkan keuangan mereka secara efisien dan elegan.</p>
-            <a href="#contact" class="bg-gold-600 hover:bg-gold-700 py-3 px-8 text-white text-xl rounded-lg transition">Hubungi Kami</a>
-        </div>
-    </section>
-
-    <!-- Footer dengan warna lebih gelap -->
-    <footer class="bg-slate-950 text-white py-12">
+    <!-- About Section yang Lebih Modern -->
+    <section id="about" class="py-24 bg-gradient-to-b from-slate-900 to-slate-800">
         <div class="max-w-7xl mx-auto px-6">
-            <div class="grid md:grid-cols-4 gap-8">
-                <div>
-                    <div class="flex items-center gap-2 mb-4">
-                        <img src="{{ asset('images/wallet.png') }}" alt="MyWallet Icon" class="w-8 h-8">
-                        <div class="text-2xl font-bold bg-gradient-to-r from-blue-400 to-indigo-500 text-transparent bg-clip-text">MyWallet</div>
+            <!-- Header Section -->
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold mb-6 bg-gradient-to-r from-blue-400 to-indigo-500 text-transparent bg-clip-text">Tentang MyWallet</h2>
+                <p class="text-xl text-slate-300 max-w-3xl mx-auto">Platform manajemen keuangan terdepan yang menggabungkan teknologi modern dengan kemudahan penggunaan untuk membantu Anda mencapai kebebasan finansial.</p>
+            </div>
+
+            <!-- Stats Section -->
+            <div class="grid md:grid-cols-4 gap-8 mb-16">
+                <div class="bg-slate-800/50 p-8 rounded-2xl border border-slate-700 text-center">
+                    <div class="text-4xl font-bold text-blue-400 mb-2">100K+</div>
+                    <div class="text-slate-300">Pengguna Aktif</div>
+                </div>
+                <div class="bg-slate-800/50 p-8 rounded-2xl border border-slate-700 text-center">
+                    <div class="text-4xl font-bold text-blue-400 mb-2">50M+</div>
+                    <div class="text-slate-300">Transaksi Diproses</div>
+                </div>
+                <div class="bg-slate-800/50 p-8 rounded-2xl border border-slate-700 text-center">
+                    <div class="text-4xl font-bold text-blue-400 mb-2">99.9%</div>
+                    <div class="text-slate-300">Uptime Server</div>
+                </div>
+                <div class="bg-slate-800/50 p-8 rounded-2xl border border-slate-700 text-center">
+                    <div class="text-4xl font-bold text-blue-400 mb-2">4.9/5</div>
+                    <div class="text-slate-300">Rating Pengguna</div>
+                </div>
+            </div>
+
+            <!-- Vision Mission Grid -->
+            <div class="grid md:grid-cols-2 gap-12 mb-16">
+                <div class="bg-slate-800/50 p-8 rounded-2xl border border-slate-700">
+                    <div class="flex items-center gap-4 mb-6">
+                        <div class="w-12 h-12 bg-blue-500/20 rounded-xl flex items-center justify-center">
+                            <svg class="w-6 h-6 text-blue-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"/>
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"/>
+                            </svg>
+                        </div>
+                        <h3 class="text-2xl font-bold text-white">Visi Kami</h3>
                     </div>
-                    <p class="text-slate-400">Solusi manajemen keuangan modern untuk masa depan yang lebih baik.</p>
+                    <p class="text-slate-300 leading-relaxed">Menjadi platform manajemen keuangan terpercaya yang membantu setiap individu dan bisnis mencapai kebebasan finansial melalui teknologi yang inovatif dan mudah digunakan.</p>
                 </div>
-                <div>
-                    <h4 class="text-lg font-semibold mb-4">Produk</h4>
-                    <ul class="space-y-2 text-slate-400">
-                        <li><a href="#" class="hover:text-blue-400 transition-colors">Fitur</a></li>
-                        <li><a href="#" class="hover:text-blue-400 transition-colors">Harga</a></li>
-                        <li><a href="#" class="hover:text-blue-400 transition-colors">Tutorial</a></li>
-                    </ul>
+                <div class="bg-slate-800/50 p-8 rounded-2xl border border-slate-700">
+                    <div class="flex items-center gap-4 mb-6">
+                        <div class="w-12 h-12 bg-blue-500/20 rounded-xl flex items-center justify-center">
+                            <svg class="w-6 h-6 text-blue-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21l-7-5-7 5V5a2 2 0 012-2h10a2 2 0 012 2v16z"/>
+                            </svg>
+                        </div>
+                        <h3 class="text-2xl font-bold text-white">Misi Kami</h3>
+                    </div>
+                    <p class="text-slate-300 leading-relaxed">Menyediakan solusi keuangan yang inovatif, aman, dan mudah diakses untuk membantu pengguna membuat keputusan finansial yang lebih baik dan mencapai tujuan keuangan mereka.</p>
                 </div>
-                <div>
-                    <h4 class="text-lg font-semibold mb-4">Perusahaan</h4>
-                    <ul class="space-y-2 text-slate-400">
-                        <li><a href="#" class="hover:text-blue-400 transition-colors">Tentang Kami</a></li>
-                        <li><a href="#" class="hover:text-blue-400 transition-colors">Karir</a></li>
-                        <li><a href="#" class="hover:text-blue-400 transition-colors">Blog</a></li>
-                    </ul>
-                </div>
-                <div>
-                    <h4 class="text-lg font-semibold mb-4">Ikuti Kami</h4>
-                    <div class="flex space-x-4">
-                        <a href="#" class="text-slate-400 hover:text-blue-400 transition-colors">
-                            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
-                        </a>
-                        <a href="#" class="text-slate-400 hover:text-blue-400 transition-colors">
-                            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z"/></svg>
-                        </a>
-                        <a href="#" class="text-slate-400 hover:text-blue-400 transition-colors">
-                            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
-                        </a>
+            </div>
+
+            <!-- Team Section -->
+            <div class="text-center mb-12">
+                <h3 class="text-3xl font-bold text-white mb-6">Tim Kami</h3>
+                <p class="text-slate-300 max-w-2xl mx-auto mb-12">Dipimpin oleh para profesional berpengalaman dalam teknologi dan keuangan</p>
+                
+                <div class="grid md:grid-cols-4 gap-8">
+                    <div class="group">
+                        <div class="relative overflow-hidden rounded-2xl mb-4">
+                            <img src="https://randomuser.me/api/portraits/men/1.jpg" alt="CEO" class="w-full aspect-square object-cover group-hover:scale-110 transition-transform duration-300">
+                            <div class="absolute inset-0 bg-gradient-to-t from-slate-900 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-6">
+                                <div class="flex gap-3">
+                                    <a href="#" class="text-white hover:text-blue-400"><svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M22.225 0H1.77C.79 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.77 24h20.452C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg></a>
+                                    <a href="#" class="text-white hover:text-blue-400"><svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z"/></svg></a>
+                                </div>
+                            </div>
+                        </div>
+                        <h4 class="text-xl font-semibold text-white mb-1">Budi Setiawan</h4>
+                        <p class="text-slate-400">CEO & Founder</p>
+                    </div>
+
+                    <div class="group">
+                        <div class="relative overflow-hidden rounded-2xl mb-4">
+                            <img src="https://randomuser.me/api/portraits/women/1.jpg" alt="CTO" class="w-full aspect-square object-cover group-hover:scale-110 transition-transform duration-300">
+                            <div class="absolute inset-0 bg-gradient-to-t from-slate-900 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-6">
+                                <div class="flex gap-3">
+                                    <a href="#" class="text-white hover:text-blue-400"><svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M22.225 0H1.77C.79 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.77 24h20.452C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg></a>
+                                    <a href="#" class="text-white hover:text-blue-400"><svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z"/></svg></a>
+                                </div>
+                            </div>
+                        </div>
+                        <h4 class="text-xl font-semibold text-white mb-1">Sarah Wijaya</h4>
+                        <p class="text-slate-400">CTO</p>
+                    </div>
+
+                    <div class="group">
+                        <div class="relative overflow-hidden rounded-2xl mb-4">
+                            <img src="https://randomuser.me/api/portraits/men/2.jpg" alt="CFO" class="w-full aspect-square object-cover group-hover:scale-110 transition-transform duration-300">
+                            <div class="absolute inset-0 bg-gradient-to-t from-slate-900 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-6">
+                                <div class="flex gap-3">
+                                    <a href="#" class="text-white hover:text-blue-400"><svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M22.225 0H1.77C.79 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.77 24h20.452C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg></a>
+                                    <a href="#" class="text-white hover:text-blue-400"><svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z"/></svg></a>
+                                </div>
+                            </div>
+                        </div>
+                        <h4 class="text-xl font-semibold text-white mb-1">Rudi Hartono</h4>
+                        <p class="text-slate-400">CFO</p>
+                    </div>
+
+                    <div class="group">
+                        <div class="relative overflow-hidden rounded-2xl mb-4">
+                            <img src="https://randomuser.me/api/portraits/women/2.jpg" alt="COO" class="w-full aspect-square object-cover group-hover:scale-110 transition-transform duration-300">
+                            <div class="absolute inset-0 bg-gradient-to-t from-slate-900 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-6">
+                                <div class="flex gap-3">
+                                    <a href="#" class="text-white hover:text-blue-400"><svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M22.225 0H1.77C.79 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.77 24h20.452C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg></a>
+                                    <a href="#" class="text-white hover:text-blue-400"><svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z"/></svg></a>
+                                </div>
+                            </div>
+                        </div>
+                        <h4 class="text-xl font-semibold text-white mb-1">Linda Kusuma</h4>
+                        <p class="text-slate-400">COO</p>
                     </div>
                 </div>
             </div>
-            <div class="border-t border-slate-800 mt-12 pt-8 text-center text-slate-400">
-                <p>&copy; 2025 MyWallet. Semua Hak Cipta Dilindungi.</p>
+
+            <!-- CTA Section -->
+            <div class="text-center">
+                <a href="#contact" class="inline-flex items-center gap-2 bg-blue-600 text-white px-8 py-3 rounded-full hover:bg-blue-700 transition-colors">
+                    <span>Hubungi Kami</span>
+                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/>
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer dengan desain yang lebih modern -->
+    <footer class="bg-slate-950 pt-20 pb-10">
+        <div class="max-w-7xl mx-auto px-6">
+            <!-- Grid Utama -->
+            <div class="grid md:grid-cols-12 gap-8 mb-12">
+                <!-- Kolom Brand -->
+                <div class="md:col-span-4">
+                    <div class="flex items-center gap-2 mb-6">
+                        <img src="{{ asset('images/wallet.png') }}" alt="MyWallet Icon" class="w-10 h-10">
+                        <div class="text-3xl font-bold bg-gradient-to-r from-blue-400 to-indigo-500 text-transparent bg-clip-text">MyWallet</div>
+                    </div>
+                    <p class="text-slate-400 mb-8 text-lg">Platform manajemen keuangan modern untuk masa depan yang lebih cerah.</p>
+                    <div class="flex gap-4">
+                        <a href="#" class="w-10 h-10 rounded-full bg-slate-800 flex items-center justify-center group hover:bg-blue-600 transition-all duration-300">
+                            <svg class="w-5 h-5 text-slate-400 group-hover:text-white" fill="currentColor" viewBox="0 0 24 24"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+                        </a>
+                        <a href="#" class="w-10 h-10 rounded-full bg-slate-800 flex items-center justify-center group hover:bg-blue-400 transition-all duration-300">
+                            <svg class="w-5 h-5 text-slate-400 group-hover:text-white" fill="currentColor" viewBox="0 0 24 24"><path d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z"/></svg>
+                        </a>
+                        <a href="#" class="w-10 h-10 rounded-full bg-slate-800 flex items-center justify-center group hover:bg-blue-500 transition-all duration-300">
+                            <svg class="w-5 h-5 text-slate-400 group-hover:text-white" fill="currentColor" viewBox="0 0 24 24"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+                        </a>
+                        <a href="#" class="w-10 h-10 rounded-full bg-slate-800 flex items-center justify-center group hover:bg-gradient-to-br from-yellow-400 via-pink-500 to-purple-500 transition-all duration-300">
+                            <svg class="w-5 h-5 text-slate-400 group-hover:text-white" fill="currentColor" viewBox="0 0 24 24"><path d="M12 0C8.74 0 8.333.015 7.053.072 5.775.132 4.905.333 4.14.63c-.789.306-1.459.717-2.126 1.384S.935 3.35.63 4.14C.333 4.905.131 5.775.072 7.053.012 8.333 0 8.74 0 12s.015 3.667.072 4.947c.06 1.277.261 2.148.558 2.913.306.788.717 1.459 1.384 2.126.667.666 1.336 1.079 2.126 1.384.766.296 1.636.499 2.913.558C8.333 23.988 8.74 24 12 24s3.667-.015 4.947-.072c1.277-.06 2.148-.262 2.913-.558.788-.306 1.459-.718 2.126-1.384.666-.667 1.079-1.335 1.384-2.126.296-.765.499-1.636.558-2.913.06-1.28.072-1.687.072-4.947s-.015-3.667-.072-4.947c-.06-1.277-.262-2.149-.558-2.913-.306-.789-.718-1.459-1.384-2.126-2.126C21.319 1.347 20.651.935 19.86.63c-.765-.297-1.636-.499-2.913-.558C15.667.012 15.26 0 12 0zm0 2.16c3.203 0 3.585.016 4.85.071 1.17.055 1.805.249 2.227.415.562.217.96.477 1.382.896.419.42.679.819.896 1.381.164.422.36 1.057.413 2.227.057 1.266.07 1.646.07 4.85s-.015 3.585-.074 4.85c-.061 1.17-.256 1.805-.421 2.227-.224.562-.479.96-.899 1.382-.419.419-.824.679-1.38.896-.42.164-1.065.36-2.235.413-1.274.057-1.649.07-4.859.07-3.211 0-3.586-.015-4.859-.074-1.171-.061-1.816-.256-2.236-.421-.569-.224-.96-.479-1.379-.899-.421-.419-.69-.824-.9-1.38-.165-.42-.359-1.065-.42-2.235-.045-1.26-.061-1.649-.061-4.844 0-3.196.016-3.586.061-4.861.061-1.17.255-1.814.42-2.234.21-.57.479-.96.9-1.381.419-.419.81-.689 1.379-.898.42-.166 1.051-.361 2.221-.421 1.275-.045 1.65-.06 4.859-.06l.045.03zm0 3.678c-3.405 0-6.162 2.76-6.162 6.162 0 3.405 2.76 6.162 6.162 6.162 3.405 0 6.162-2.76 6.162-6.162 0-3.405-2.76-6.162-6.162-6.162zM12 16c-2.21 0-4-1.79-4-4s1.79-4 4-4 4 1.79 4 4-1.79 4-4 4zm7.846-10.405c0 .795-.646 1.44-1.44 1.44-.795 0-1.44-.646-1.44-1.44 0-.794.646-1.439 1.44-1.439.793-.001 1.44.645 1.44 1.439z"/></svg>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Kolom Menu -->
+                <div class="md:col-span-2">
+                    <h4 class="text-white text-lg font-semibold mb-6">Produk</h4>
+                    <ul class="space-y-4">
+                        <li><a href="#" class="text-slate-400 hover:text-blue-400 transition-colors">Fitur</a></li>
+                        <li><a href="#" class="text-slate-400 hover:text-blue-400 transition-colors">Harga</a></li>
+                        <li><a href="#" class="text-slate-400 hover:text-blue-400 transition-colors">Tutorial</a></li>
+                        <li><a href="#" class="text-slate-400 hover:text-blue-400 transition-colors">Marketplace</a></li>
+                    </ul>
+                </div>
+
+                <div class="md:col-span-2">
+                    <h4 class="text-white text-lg font-semibold mb-6">Perusahaan</h4>
+                    <ul class="space-y-4">
+                        <li><a href="#" class="text-slate-400 hover:text-blue-400 transition-colors">Tentang Kami</a></li>
+                        <li><a href="#" class="text-slate-400 hover:text-blue-400 transition-colors">Karir</a></li>
+                        <li><a href="#" class="text-slate-400 hover:text-blue-400 transition-colors">Blog</a></li>
+                        <li><a href="#" class="text-slate-400 hover:text-blue-400 transition-colors">Press Kit</a></li>
+                    </ul>
+                </div>
+
+                <div class="md:col-span-2">
+                    <h4 class="text-white text-lg font-semibold mb-6">Dukungan</h4>
+                    <ul class="space-y-4">
+                        <li><a href="#" class="text-slate-400 hover:text-blue-400 transition-colors">Bantuan</a></li>
+                        <li><a href="#" class="text-slate-400 hover:text-blue-400 transition-colors">Status</a></li>
+                        <li><a href="#" class="text-slate-400 hover:text-blue-400 transition-colors">Dokumentasi</a></li>
+                        <li><a href="#" class="text-slate-400 hover:text-blue-400 transition-colors">API</a></li>
+                    </ul>
+                </div>
+
+                <!-- Newsletter -->
+                <div class="md:col-span-2">
+                    <h4 class="text-white text-lg font-semibold mb-6">Newsletter</h4>
+                    <p class="text-slate-400 mb-4">Dapatkan update terbaru dari kami</p>
+                    <form class="space-y-4">
+                        <div class="relative">
+                            <input type="email" placeholder="Email address" class="w-full px-4 py-3 bg-slate-800 rounded-lg text-white placeholder-slate-400 focus:outline-none focus:ring-2 focus:ring-blue-500">
+                            <button type="submit" class="absolute right-2 top-2 bg-blue-600 text-white px-4 py-1 rounded-md hover:bg-blue-700 transition-colors">
+                                Kirim
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+            <!-- Garis Pemisah -->
+            <div class="border-t border-slate-800 my-8"></div>
+
+            <!-- Footer Bottom -->
+            <div class="flex flex-col md:flex-row justify-between items-center gap-4">
+                <div class="text-slate-400 text-sm">
+                    &copy; 2025 MyWallet. Semua Hak Cipta Dilindungi.
+                </div>
+                <div class="flex gap-6">
+                    <a href="#" class="text-slate-400 hover:text-blue-400 text-sm">Kebijakan Privasi</a>
+                    <a href="#" class="text-slate-400 hover:text-blue-400 text-sm">Syarat & Ketentuan</a>
+                    <a href="#" class="text-slate-400 hover:text-blue-400 text-sm">Cookies</a>
+                </div>
             </div>
         </div>
     </footer>

@@ -8,6 +8,7 @@ use Illuminate\Http\RedirectResponse;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\View\View;
+use Filament\Facades\Filament;
 
 class AuthenticatedSessionController extends Controller
 {
@@ -34,14 +35,20 @@ class AuthenticatedSessionController extends Controller
     /**
      * Destroy an authenticated session.
      */
+
     public function destroy(Request $request): RedirectResponse
     {
         Auth::guard('web')->logout();
-
+    
         $request->session()->invalidate();
-
+    
         $request->session()->regenerateToken();
-
-        return redirect('/');
+    
+        // Override default Filament redirect after logout
+        Filament::auth()->logout();
+    
+        // Redirect ke halaman welcome
+        return redirect()->route('welcome');
     }
+     
 }
